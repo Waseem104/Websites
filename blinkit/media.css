@@ -1,0 +1,45 @@
+@media (max-width:680px){
+    header{
+        height: auto;
+        width: 100%;
+    }
+    header .rows{
+        height: auto;
+        padding: 10px 0;
+    }
+    header .rows #nav-1{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        gap: 10px;
+        border: none;
+    }
+    .rows #nav-2{
+        display: none;
+    }
+    /* products */
+    .products{
+        width: 100%;
+    }
+    .products h2{
+        text-align: center;
+    }
+    .products .rows{
+        width: 500px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 30px;
+    }
+    /* footer */
+    footer{
+        width: 100%;
+    }
+    footer .rows .col-2{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .rows #footer-2{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}

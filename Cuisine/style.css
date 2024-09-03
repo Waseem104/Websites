@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* global selectors */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Montserrat;
+}
+
+
+
+
+/* navigation section */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color:azure;
+}
+.header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header nav ul li{
+    list-style-type: none;
+    padding: 0 10px;
+}
+.header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.header nav ul li a:hover{
+    color: #9E0D06;
+}
+.header .logo img{
+    width: 200px;
+    height: 70px;
+}
+.header .booking a{
+    padding: 4px 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    border: 2px solid #9E0D06;;
+    border-radius: 8px;
+    color:azure;
+    background-color: #9E0D06;
+    font-weight: 550;
+}
+.header .booking a:hover{
+    background-color: azure;
+    color: black;
+}
+/* intro section */
+.intro{
+    background-image: url(image-1.jpg);
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* intro-2 */
+.intro-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+.intro-2 h2{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 20px 0 30px 0;
+    font-size: 30px;
+
+}
+.intro-2 .rows{
+    width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.rows .col-6{
+  border: 2px solid #9E0D06;
+  padding: 15px;
+}
+.rows .col-6 h3{
+    text-align: center;
+    padding-bottom: 12px;
+}
+.rows .col-6 p{
+    text-align: center;
+    font-weight: 450;
+}
+/* menu */
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    height: auto;
+    margin-bottom: 40px;
+}
+.menu h2{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 20px 0 30px 0;
+    font-size: 30px;
+}
+.menu .rows{
+    width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    /* box-sizing: border-box; */
+    border: 1px solid #9E0D06;
+    padding: 10px;
+}
+.menu .rows .col-8{
+    /* flex: 1 1 20%; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.menu .rows .col-8 img{
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+.menu .rows .col-8 p{
+    padding: 8px 5px;
+    font-weight: 500;
+}
+/* ----footer---- */
+.footer{
+    background-color: azure;
+}
+.footer .rows{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #9E0D06;
+    gap: 20px;
+}
+.footer .rows .col-4{
+    box-sizing: border-box;
+    width: 100%;
+}
+.footer .rows .col-4 img{
+    width: 200px;
+    height: 100px;
+}
+.footer .rows .col-4 a{
+    display: block;
+    margin: 10px 0;
+    /* padding: 5px; */
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.footer .rows .col-4 a:hover{
+    color: #9E0D06;
+}
+.footer .rows .col-4{
+    padding: 8px 5px;
+    font-weight: 500;
+}
