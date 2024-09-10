@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Montserrat;
+    background-color: white;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: green;
+}
+header .rows{
+    display: flex;
+    flex-direction: column;
+}
+header .rows #nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+header .rows .col-2 .col-4 img{
+    /* display: block; */
+    height: 50px;
+    width: 100%;
+}
+header .rows .col-2 .col-4 h3{
+    color: yellow;
+}
+header .rows .col-2 .col-4:nth-child(3) input{
+ width: 450px;
+ height: 30px;
+ border-radius: 5px;
+ outline: none;
+}
+header .rows .col-4:nth-child(4){
+    display: flex;
+    justify-content: space-around;
+}
+.rows .col-4:nth-child(4) .col-2 a{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 15px;
+    color: black;
+    font-weight: 500;
+    border: 1px solid black;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.rows .col-4:nth-child(4) .col-2 a:hover{
+    background-color: rgb(241, 241, 162);
+}
+.rows #nav-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.rows .col-2 nav ul{
+    display: flex;
+}
+.rows .col-2 nav ul li{
+    list-style-type: none;
+    padding: 10px 10px;
+}
+.rows .col-2 nav ul li a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.rows .col-2 nav ul li a:hover{
+    color: black;
+}
+
+/* products */
+.products{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(213, 213, 213);
+}
+.products .title{
+    padding: 10px 20px;
+}
+.products .rows{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding: 0 20px 40px 20px;
+    /* margin-bottom: 30px; */
+    /* background-color: rgb(213, 213, 213); */
+}
+.products .rows .col-5{
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.products .rows .col-5 img{ 
+    width: 100%;
+    display: block;
+}
+.products .rows .col-5 .name{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.products .rows .col-5 .weight{
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.products .rows .col-5 .price{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.products .rows .col-5 a{
+    padding: 5px 10px;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-weight: 450;
+}
+.products .rows .col-5 a:hover{
+    background-color: green;
+    color: white;
+}
+/* footer */
+footer{
+    background-color: green;
+    height: auto;
+}
+footer .rows{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .col-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .col-2 .col_2 a{
+    text-decoration: none;
+    padding: 10px 0;
+}
+footer .col-2 .col_2 h2{
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+footer .col-2 .col_2 a{
+    padding: 0 10px;
+    color: white;
+    font-weight: 500;
+}
+footer .rows #footer-2 .col-3{
+    display: flex;
+}
+footer .rows #footer-2 .col-3 img{
+    width: 100%;
+    height: 50px;
+}
+footer .rows #footer-2 .col-3 a{
+    padding: 0 30px;
+    font-size: 30px;
+    color: white;
+}
+footer .rows .col-2 a:hover{
+    color: black;
+}
+footer #footer-2 p{
+    font-weight: 500;
+    color: white;
+}

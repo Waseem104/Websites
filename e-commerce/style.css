@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global selectors */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p,a,li{
+    font-family: 'Open Sans', sans-serif;;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* ------header section------- */
+.header{
+    /* position: fixed; */
+    /* top: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(224, 223, 223);
+    height: 55px;
+    /* z-index: 1000; */
+
+}
+.header .logo img{
+    height: 55px;
+    width: 150px;
+}
+.header .navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .navbar ul li{
+    list-style-type: none;
+    padding: 0 20px;
+}
+.header .navbar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:400;
+    color: rgb(2, 2, 118);
+}
+.header .navbar ul li a:hover{
+    color: rgb(95, 94, 94);
+}
+.header .my-account{
+display: flex;
+}
+.header .my-account a i{
+    padding: 0 7px;
+    font-size: 22px;
+    margin: 0 10px;
+    color: rgb(2, 2, 118);
+}
+.header .my-account a i:hover,
+.header .my-account a i:active{
+    border-radius: 50%;
+    background-color:rgb(95, 94, 94);
+}
+/* -------intro--------- */
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: auto;
+    margin-bottom: 40px;
+}
+#image img{
+    display: block;
+    width: 100%;
+}
+.grid-container #quote {
+    background-color:rgb(224, 223, 223);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.grid-container .intro p{
+    line-height: 30px;
+}
+.grid-container .intro p span{
+    background-color: rgb(159, 159, 159);
+    padding: 2px 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.grid-container .intro p span:hover{
+    background-color: rgb(95, 94, 94)
+}
+/* --------------------------------------- */
+.rows{
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+/* ---------barnds deals -------------*/
+.brand-section .title{
+    padding-left: 15px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.rows .brand{
+    /* flex: 1 1 200px; */
+    /* width: 100%; */
+    /* height: auto; */
+    box-sizing: border-box;
+    padding: 15px;
+    border: 0 solid black;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    cursor: pointer;
+    /* flex-wrap: wrap; */
+}
+.brand-section .rows .brand img{
+    width: 100%;
+    height: 360px;
+    border-radius: 5px;
+    display: block;
+}
+.brand-section .rows .brand .brand-name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.brand-section .rows .brand .discount{
+    text-align: center;
+    font-size: 40px;
+}
+.rows .brand:hover{
+    transform: scale(1.03);
+}
+/* -----categories -------*/
+.category-container .title{
+    padding-left: 15px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.rows .category{
+    /* width: 100%; */
+    /* height: auto; */
+    /* border: 1px solid black; */
+    padding: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.rows .category:hover{
+    transform: scale(1.03);
+}
+.rows .category img{
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    height: 360px;
+}
+.rows .category h2{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+/* -------new arrivals ---------*/
+.arrivals-section .title{
+    padding-left: 15px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.rows .arrivals-container{
+    /* width: 100%; */
+    padding: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+.rows .arrivals-container:hover{
+    transform: scale(1.03);
+}
+.rows .arrivals-container img{
+    width: 100%;
+    display: block;
+    height: 300px;   
+}
+.rows .arrivals-container .name{
+    font-size: 12px;
+    padding: 10px 0 5px 0;
+}
+.rows .arrivals-container .price{
+    font-weight: 500;
+}
+.rows .arrivals-container i{
+    color: rgb(2, 2, 118);
+    font-size: 10px;
+}
+.rows .arrivals-container a i{
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: (2, 2, 118);
+}
+/* --------footer---------- */
+body .footer-section .rows{
+    background-color: rgb(224, 223, 223);
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* width: 100%; */
+}
+.rows .col-3{
+    box-sizing: border-box;
+    /* width: 100%; */
+    flex-basis: 33%;
+    padding-left: 20px;
+    padding-top: 20px; 
+}
+.rows .col-3 h2{
+    font-size: 15px;
+}
+.rows .col-3 a{
+    display: block;
+    color: rgb(2, 2, 118);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.rows .col-3:nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+.rows .col-3:nth-child(3) .social a{
+    display: inline;
+}
+.rows .col-3:nth-child(3) .social{
+    margin-bottom: 20px;
+}
+.rows .col-3:nth-child(3) .payment img{
+    width: 80%;
+    padding-top: 10px;
+}
+/* ------icons-------- */
+.b-icon{
+    font-size: 25px;
+    padding:15px;
+    color: rgb(2, 2, 118);
+}
